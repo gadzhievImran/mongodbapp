@@ -24,7 +24,22 @@ const client = new MongoClient('mongodb://localhost:27017', { useNewUrlParser: t
     // console.log(note, 'note');
     
     // update
-    // 15:23
+    // const result = await collection.updateMany({ title: 'Hello World' }, { $set: { title: 'Hello World!' } });
+    // console.log(result, 'result');
+    
+    // read again
+    // const result = await collection.find().toArray();
+    // console.log(result, 'result')
+    
+    // delete
+    // const result = await collection.deleteOne({ title: 'Hello World!' });
+    // console.log(result, 'result');
+    
+    // read again
+    // const result = await collection.find().toArray();
+    // console.log(result);
+
+    // 20:26
     
     client.close();
   }
