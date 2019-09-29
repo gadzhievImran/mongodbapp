@@ -1,0 +1,18 @@
+extends /index
+
+block header
+    h1 Заметки
+
+    a(href="/notes/create") Создать заметку
+
+block main
+    div
+        for note in notes
+            div
+                h3= note.title
+                div= note.content
+                div
+                    a(href=`/notes/${notes._id}`) Подробнее
+                    a(href=`/notes/${notes._id}/update`) Обновить
+                    a(href=`/notes/${notes._id}/delete`) Удалить
+
