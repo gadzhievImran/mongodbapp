@@ -9,10 +9,13 @@ block main
     div
         for note in notes
             div
-                h3= note.title
+                h2= note.title
                 div= note.content
                 div
-                    a(href=`/notes/${notes._id}`) Подробнее
-                    a(href=`/notes/${notes._id}/update`) Обновить
-                    a(href=`/notes/${notes._id}/delete`) Удалить
+                    div
+                        a(href=`/notes/${notes._id}`) Подробнее
+                    div
+                        a(href=`/notes/${notes._id}/update`) Обновить
+                    div
+                        a(href=`/notes/${notes._id}/delete`) Удалить
 

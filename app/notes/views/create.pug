@@ -1,0 +1,24 @@
+extends /index
+
+block header
+    h1 Новая заметка
+
+block main
+    form(method="Post")
+        div
+            input(
+                name="title"
+                placeholder="Название"
+                required
+            )
+
+        div
+            textarea(
+                name="content"
+                placeholder="Содержание"
+                required
+            )
+
+        div
+            a(href="/notes") Отменить
+            button(type="submit") Отправить
